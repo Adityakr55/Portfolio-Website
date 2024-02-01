@@ -539,10 +539,10 @@ a {
     text-align: center;
   }
 
-  .btn-pink{
+  #btn-left{
     display: none;
-  }  
-
+  }
+  
   .hero-section-right{
     margin-top: -3em;
     scale: 0.7;

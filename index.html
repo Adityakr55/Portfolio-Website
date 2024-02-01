@@ -5,6 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Website -Aditya</title>
     <link rel="stylesheet" href="styles.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+      // Prevent page scroll on form submit
+        $(document).ready(function() {
+        $('form').submit(function(event) {
+          event.preventDefault(); // Prevent the default form submission behavior --> -->
+  
+          // Add your form processing logic here
+  
+          // Optionally, you can use AJAX to submit the form data without refreshing the page
+          // Example:
+          // $.ajax({
+          // type: 'POST',
+          // url: 'your-server-endpoint',
+          // data: $('form').serialize(),
+          // success: function(response) {
+          //   console.log(response);
+          // }
+          // });
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="wrapper">
@@ -451,7 +474,7 @@
 
               </div>
 
-              <button type="submit" class="btn-pink" id="submit-btn">
+              <button type="submit" class="btn-pink" id="submit-btn" onsubmit="">
                 Send Message <i class="submit-icon fa-solid fa-paper-plane"></i>
               </button>
 
